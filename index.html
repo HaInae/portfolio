@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav> 
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="profile"><a href="./profile/index.html">Profile</a></li>
+            <li class="illust"><a href="./illustrator/index.html">Illust</a></li>
+            <li class="photoshop"><a href="./photoshop/index.html">Photoshop</a></li>
+            <li class="contact"><a href="./contact/index.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- autoplay="autoplay"  
+        제목은 :  class title  // position:absolute; width:100%; display:flex; //안에 b2개있어도됨
+        바로가기  :class go // display:flex; img-size: //안에 b 2개집어넣은 형식있음.    
+         -->
+    <div class="se1">
+        <video src="Comp 1.mp4"  muted="muted"  width="60%" autoplay='autoplay' ></video>
+    </div>
+    <div class="se2">
+        <a href="./profile/index.html">
+                <h2 class="h2 se2_h2">Profile</h2>
+                <p class="go">바로가기 <img src="./img/icon/go.png" alt="go"></p>
+        </a>
+    </div>
+    <div class="se3">
+        
+        <ul>
+            <a href="./eng_mou/index.html">
+                <p class="go"><b>English 無無</b><b>바로가기 <img src="./img/icon/go.png" alt="go"></b></p>
+                <li><img class="web-notebook" src="./img/icon/web-notebook1.png" alt="media"></li>
+            </a>
+            <a href="./LEGO2/index.html">
+                <h2 class="title" ><b>Web Renewal</b> <b>1px 더 센스있게</b></h2>
+                <p class="go"><b>LEGO</b><b>바로가기 <img src="./img/icon/go.png" alt="go"></b></p>
+                <li><img class='web-pad' src="./img/icon/web-pad2.png" alt="media"></li>
+            </a>
+            <a href="./Orion/web/index.html">
+                <p class="go"><b>오리온</b><b>바로가기(반응형) <img src="./img/icon/go.png" alt="go"></b></p>
+                <li><img class="web-phone" src="./img/icon/web-phone.png" alt="media"></li>
+            </a>
+        </ul>
+    </div>
+    <a href="./photoshop/index.html">
+        <div class="se4">
+            <div><img src="./img/port_psd.jpg" alt="psd_img"></div>
+            <div class="wrap">
+                <p>Photoshop</p> <p></p>
+            </div>
+        </div>
+    </a>
+
+    <p class='se4_between'>1px 더 깔끔하게<b></b></p>
+
+    <a href="./illustrator/">
+        <div class="se4-1">
+            <p>Illustrator</p>
+            <div><img src="./img/포트폴리오일러스트 완성.jpg" alt="illu_img"></div>
+        </div>
+    </a>
+    <div class="se5">
+        <span>봐 주셔서 감사합니다</span> 
+        <span class='up'><img src="./img/icon/sharp_keyboard_control_key_black_24dp.png" alt="up"></span>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+nav{
+    position:fixed;
+    top:0;
+    width: 100%;
+    background:rgba(0,0,0,0.8);
+    
+}
+nav>ul{
+    display:flex;
+    justify-content: space-around;
+    padding:8px 30%;
+}
+nav>ul>li>a{
+    font-size:15px;
+    color:#fff;
+}
+
+
+
+
+.blue{
+    color:#4FBDBA;
+}
+.red{
+    color:#EF2F88;
+}
+.big{
+    font-size:26px;
+}
+.small{
+    font-size:16px;
+}
+p{
+    display:none;
+}
+p>span{
+    color:#AEFEFF;
+    animation-name:up_color;
+    animation-duration:2s;
+    position: relative;
+}
+.down{
+    animation-name:down;
+    animation-duration:2s;
+    position:relative;
+}
+.up{
+    animation-name:up;
+    animation-duration:2s;
+    position:relative;
+}
+.out{
+    animation-name:out;
+    animation-duration:2s;
+}
+.in{
+    animation-name:in;
+    animation-duration:2s;
+}
+.wrap{
+    background-color: #000;
+    text-align:center;
+    height:5000px;
+    
+}
+.text{
+    background-color: #000; 
+    margin:0 auto;
+    position:fixed;
+    top: 35%;
+    color: #fff;
+    width: 100%;
+    height:10%;
+    font-size:24px;
+}
+.photo{
+    position:fixed;
+    top:60%;
+    width:100%
+}
+.photo>*{
+
+    color: #fff;
+    margin:0 auto;
+    width: 20%;
+    display:none;
+}
+@keyframes up_color{
+    from{
+        top:20px;
+        color:black;
+    }
+    to{
+        top:0;
+        color:#AEFEFF;  
+    }
+}
+@keyframes up{
+    from{
+        top:20px;
+    }
+    to{
+        top:0;
+    }
+}
+
+@keyframes down{
+    from{
+        bottom:20px;
+    }
+    to{
+        bottom:0;
+    }
+}
+@keyframes out{
+    from{
+        color:#fff;
+    }
+    to{
+        color:#000;
+    }
+}
+@keyframes in{
+    from{
+        color:#000;
+    }
+    to{
+        color:#fff;
+    }
+}
+
+

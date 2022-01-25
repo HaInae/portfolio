@@ -1,0 +1,257 @@
+body{
+    font-family:'Heebo',sans-serif;
+    color:rgba(0,0,0,0.8);
+}
+nav{
+    position:fixed;
+    z-index:1;
+    top:0;
+    width: 100%;
+    background:rgba(0,0,0,0.8);
+    
+    
+}
+nav>ul{
+    display:flex;
+    justify-content: space-around;
+    padding:8px 30%;
+}
+nav>ul>li>a{
+    font-size:15px;
+    color:#fff;
+}
+
+.se1{
+    text-align: center;
+    display: flex;
+    background-color: #587AB9 ;
+}
+.se1>video{
+    width:100%;
+}
+.go{
+    display:flex;
+    font-size:15px;
+    align-items: center;
+    margin:0 auto;
+    justify-content: center;
+
+}
+.go>img{
+    padding-left:5px;
+    width:10px;
+    height:10px;
+}
+.se2{
+    height:50vh;
+    background-color: #f6f6f6;
+    position:relative;
+    background-image:url(../img/profile.png);
+    background-size: 20%;
+    background-repeat:no-repeat;
+    background-position:center bottom;
+}
+h2{
+ font-size:40px;
+ font-family:'Heebob',sans-serif;
+ padding-top: 20px;
+}
+.se2>a{
+    position:absolute;
+    top: 34%;
+    left: 17%;
+}
+.se2_h2{
+    color:#fff;
+    background-color:#000;
+    font-size: 30px;
+    display: flex;
+    padding: 3px 70px;
+}
+
+.se2 .go {
+    font-size: 15px;
+    padding-top: 3px;
+}
+.se3{
+    height:70vh;
+    padding:10px;
+    text-align: center;
+}
+.se3>ul{
+    display:flex;
+    height: 100%; 
+    
+}
+.se3>ul>a{
+    display:block;
+    width:100%;
+    position:relative;
+    
+}
+.se3>ul>a>li{
+    height:100%;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+.se3>ul>a:nth-child(2){
+    background-color: #f6f6f6;  
+}
+.title{
+    position:absolute; /*없애면 안됩니당 요소의 길이가 늘어남.*/
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+}
+.title>b:last-child{
+    font-family:'Heebo';
+    font-size:20px;
+    padding-top: 5px;
+}
+.se3 .go{
+    position:absolute;
+    top:17%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+.se3 .go>b:first-child{
+    font-size:40px;
+}
+.go>b>img{
+    width:7px;
+}
+.go>b:last-child{
+    padding-top:20px;
+}
+.se3 li>img{
+    position:absolute;
+    bottom:0;
+}
+.se3 .web-notebook{
+    width:70%;
+}
+
+.se3 .web-pad{
+    width:55%;
+}
+.se3 .web-phone{
+    width:60%;
+    bottom:0;
+    left:0;
+}
+.se4, .se4-1{
+    display:flex;
+    font-family: 'Heebob','arial';
+    font-size:35px;
+}
+
+.se4{
+    padding-top:50px;
+}
+.se4-1{
+    justify-content:flex-end;
+    padding:20px 0 50px;
+}
+.se4 .wrap,.se4-1 p {
+    writing-mode: vertical-rl;
+    text-orientation:  mixed;
+}
+.se4>div:first-child{
+    background-color:#ddd;
+    text-align: center;
+    width:50%;
+}
+.se4 .wrap{
+    display:flex; 
+    align-items:center;
+    position: relative;
+    top: 50px;
+}
+.se4_between{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    font-size:20px;
+    padding-top: 20px;
+    font-family:'Heebob';
+    align-items: center;
+}
+.se4_between>b{
+    width:20px;
+    height:20px;
+    border:5px solid #3f51b5;
+    background-color: #fff;
+    margin-left:10px;
+}
+.se4 .wrap>p:last-child{
+    width: 4px;
+    height: 100px;
+    background-color: #3f51b5;
+    margin-top: 20px;
+}
+
+.se4-1>div{
+    text-align: center;
+    display:flex;
+    justify-content: start;
+    width:45%;
+    border: 3px solid #3f51b5;
+    
+}
+.se4 img,.se4-1 img{
+    width:45%;
+}
+.se4-1 p{
+    padding-top:20px;
+}
+
+.se5{
+    display: flex;
+    height:200px;
+    background-color: #ddd;
+    font-size:20px;
+    box-sizing:border-box;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+@media screen and (min-width: 1500px ){
+    .se2{
+       padding-top:100px; 
+    }
+}
+.down{
+    animation-name:down;
+    animation-duration:2s; 
+    position:relative;
+}
+@keyframes down {
+    from {
+        top:-20px;
+        color:#fff;
+    }
+    to{
+        top:0;
+        color:rgba(0,0,0,0.8);
+    }
+}
+.down_se2{
+    animation-name:down_se2;
+    animation-duration:2s; 
+}
+@keyframes down_se2 {
+    from {
+        top:24%;
+        color:#fff;
+    }
+    to{
+        top:34%;
+        color:rgba(0,0,0,0.8);
+    }
+}
